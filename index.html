@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Component Library</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="functionality.js" type = "text/javascript"></script>
+</head>
+
+<body>
+    <div class="header" id='header'>
+        <h1>Css Component Library</h1>
+    </div>
+    <div class='body-container'>
+        <div class='alert-container' id='alerts-id'>
+            <h1>Alerts</h1>
+            <div class="alert alert-success">
+                Success alert
+            </div>
+            <div class="alert alert-failure">
+                Failure alert
+            </div>
+            <div class="alert alert-warning">
+                Warning Alert
+            </div>
+            <div class="alert alert-info">
+                Info Alert
+            </div>
+        </div>
+        <div class="avatars-container" id='avatars-id'>
+            <h1>Avatars</h1>
+            <div>
+                <img src="/assets/rdj.jpg" class="avatar avatar-sm" />
+                <img src="/assets/rdj.jpg" class="avatar avatar-md" />
+                <img src="/assets/rdj.jpg" class="avatar avatar-lg" />
+            </div>
+        </div>
+        <div class='list-container' id='lists-id'>
+            <h1>List</h1>
+            <div>
+                <h2>Stacked List</h2>
+                <ul class="list-group">
+                    <li class="list-item"> Item 1</li>
+                    <li class="list-item"> Item 2</li>
+                    <li class="list-item"> Item 3</li>
+                    <li class="list-item"> Item 4</li>
+                    <li class="list-item"> Item 5</li>
+                </ul>
+                <h2> Spaced List</h2>
+                <ul class="list-group">
+                    <li class="list-item spaced"> Item 1</li>
+                    <li class="list-item spaced"> Item 2</li>
+                    <li class="list-item spaced"> Item 3</li>
+                    <li class="list-item spaced"> Item 4</li>
+                    <li class="list-item spaced"> Item 5</li>
+                </ul>
+            </div>
+        </div>
+        <div class="typo-container" id="typos-id">
+            <h1>Typography</h1>
+            <div class='headings'>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </div>
+            <div class="text-vary">This is <small>small </small><strong>important </strong>
+                <mark>but</mark><b> bold </b> <i>italic </i> text</div>
+            <div class="text-vary text-color">The text colour is grey</div>
+        </div>
+        <div class="grid-container" id="grids-id">
+            <h1>Grids</h1>
+            <h2>Grid with 2 element</h2>
+            <div class="grid-2">
+                <div class="grid-area grid-2-area-1">Area 1</div>
+                <div class="grid-area grid-2-area-2">Area 2</div>
+            </div>
+            <h2>Grid with 3 element</h2>
+            <div class="grid-3">
+                <div class="grid-area grid-3-area-1">Area 1</div>
+                <div class="grid-area grid-3-area-2">Area 2</div>
+                <div class="grid-area grid-3-area-3">Area 3</div>
+            </div>
+        </div>
+        <div class="image-container" id='image-id'>
+            <h1>Images</h1>
+            <h2>Responsive Image</h2>
+            <img src="/assets/northernlights.jpg" class="img-responsive">
+            <h2>Round Image</h2>
+            <img src="/assets/northernlights.jpg" class="img-round">
+        </div>
+        <div class="badges-container" id='badges-id'>
+            <h1>Badges</h1>
+            <h2>Badges on icons</h2>
+            <div class="badge-icon">
+                <img src="/assets/message.svg">
+                <span class="badge-icon-count">99</span>
+            </div>
+            <h2>Badges on Avatars</h2>
+            <div class="badge-div">
+                <img src="/assets/rdj.jpg" class="badge-img badge-img-lg" />
+                <span class="badge-image left">Handsome</span>
+            </div>
+        </div>
+        <div class="modals-container" id='modals-id'>
+            <h1>Modals</h1>
+            <button id="myBtn" onclick="buttonOnClick('myBtn')">Open Modal</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="spanOnClick('close')">&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+            </div>
+        </div>
+        <div class ='button-container' id='buttons-id'>
+            <h1>Buttons</h1>
+            <button class="primary-btn">Primary </button>
+            <br></br>
+            <a href="#header" class='link-button'>Link Button</a>
+            <br></br>
+            <button class="icon-btn"><i class="fa fa-bars"></i> Menu</button>
+            <a href="#header" class="float">
+                <i class="fa fa-home my-float"></i>
+            </a>
+        </div>
+        <div class="forms-container" id="forms-id">
+            <h1>Forms</h1>
+            <div class='forms-div'>
+                <form class="form" action="javascript:void(0);" id="form" onsubmit="validateForm()">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><span></span>
+                    <i class="" id="fname-validate"></i>
+                    <br></br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <i class="" id="lname-validate"></i>
+                    <br></br>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                    <label for="gender">Gender</label>
+                    <div id='gender'>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+
+                    <input id="submit-btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="cards-container" id="cards-id">
+            <h1>Cards</h1>
+            <h2>Vertical Cards</h2>
+            <div class="card-box">
+                <img src="/assets/rdj.jpg" alt="#" id="card-img">
+                <div class="card-box-container">
+                  <h4><b>Robert Downey Junior</b></h4> 
+                  <p>Iron Man</p> 
+                </div>
+            </div>
+            <br></br>
+            <h2>Horizontal Cards</h2>
+            <div class="cards-horizontal">
+                <div class="flex">
+                    <img
+                        src="/assets/shirt.jpeg"></img>
+                    <div class="cards-horizontal-txt">
+                        <h3 class="m-0">Myntra</h3>
+                        <div>
+                            <div class="color">Color :</div>
+                            <ul class="flex palette m-0">
+                                <li class="color border-round mr-1 bg-black"></li>
+                                <li class="color border-round mr-1 bg-blue"></li>
+                                <li class="color border-round mr-1 bg-red"></li>
+                                <li class="color border-round mr-1 bg-white"></li>
+                            </ul>
+                            </div>
+                        <div>welcome party</div>
+                        <div>
+                            <span class="bold">$ <i>80</i>/-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br></br>
+            <h2>Cards with overlay text</h2>
+            <div class="card-box-overlay">
+                <img src="/assets/rdj.jpg" alt="#" id="card-img">
+                <div class="card-box-container">
+                  <h4><b>Robert Downey Junior</b></h4> 
+                  <div class="card-overlay">
+                    <div class="overlay-text">Iron Man</div>
+                  </div>
+                </div>
+            </div>
+            <br></br>
+            <h2>Cards with Badges</h2>
+            <div class="card-box">
+                <div class="badge-div">
+                    <img src="/assets/rdj.jpg" class="card-img-lg" />
+                    <span class="badge-image right-top">Avenger</span>
+                </div>
+                <div class="card-box-container">
+                  <h4><b>Robert Downey Junior</b></h4> 
+                  <p>Iron Man</p>
+                </div>
+            </div>
+            <br></br>
+            <h2>Cards with Shadow</h2>
+            <div class="card-box-shadow">
+                <img src="/assets/rdj.jpg" alt="#" id="card-img">
+                <div class="card-box-container">
+                  <h4><b>Robert Downey Junior</b></h4> 
+                  <p>Iron Man</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='body-sidebar'>
+        <h3>Navigation</h3>
+        <div class="navigation-container">
+            <ul class = "navigation-list">
+                <li class="nav-list-element">
+                    <a href="#alerts-id" class="navigation-link">Alerts</a>
+                </li>
+                <li class="nav-list-element">
+                    <a href="#avatars-id" class="navigation-link">Avatars</a>
+                </li>
+                <li class="nav-list-element">
+                    <a href="#lists-id" class="navigation-link">List</a>
+                </li>
+                <li class="nav-list-element">
+                    <a href="#typos-id" class="navigation-link">Typography</a>
+                </li>
+                <li class="nav-list-element">
+                    <a href="#grids-id" class="navigation-link">Grids</a>
+                </li>
+                <li class="nav-list-element">
+                    <a href="#badges-id" class="navigation-link">Badges</a>
+                </li>
+                <li class="nav-list-element">
+                    <a href="#modals-id" class="navigation-link">Modals</a>
+                </li>
+                <li class="nav-list-element">
+                    <a href="#buttons-id" class="navigation-link">Buttons</a>
+                </li>
+                <li class="nav-list-element">
+                    <a href="#forms-id" class="navigation-link">Forms</a>
+                </li>
+                <li class="nav-list-element">
+                    <a href="#cards-id" class="navigation-link">Cards</a>
+                </li>               
+            </ul>
+            <div class="social-media">
+                <a href="https://github.com/vikbhas">
+                    <img src="/assets/github-brands.svg" class="social-media-link">
+                </a>
+                <a href="https://www.facebook.com/vigneshwaraa.sarang/" class="social-media-link">
+                    <img src="/assets/facebook-brands.svg" class="social-media-link">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

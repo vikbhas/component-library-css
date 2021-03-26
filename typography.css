@@ -1,0 +1,16 @@
+.typo-container{
+    padding: 1rem 1rem;
+}
+
+.headings{
+    padding: 0.75rem 2rem;
+}
+
+.text-vary{
+    padding: 0.75rem 2rem;
+}
+
+.text-vary + .text-color{
+    color: #4B5563;
+
+}
