@@ -1,0 +1,26 @@
+.body-sidebar h3{
+    padding-left: 2rem;
+    padding-top: 3rem;
+}
+
+.navigation-link{
+    text-decoration: none;
+    color:white;
+}
+
+.navigation-list{
+    list-style-type: none;
+}
+
+.nav-list-element{
+    padding-bottom: 1rem;
+}
+
+.social-media-link{
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: black;
+    height: 300px;
+    width: 50px;
+    margin-bottom: 20px;
+}

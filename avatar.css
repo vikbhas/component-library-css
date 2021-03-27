@@ -1,0 +1,22 @@
+.avatars-container{
+    padding: 1rem 1rem;
+}
+.avatar{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.avatar-sm{
+    width: 50px;
+    height: 50px;
+}
+.avatar-md{
+    width: 100px;
+    height: 100px;
+}
+.avatar-lg{
+    width: 200px;
+    height: 200px;
+}

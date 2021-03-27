@@ -1,0 +1,86 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+/* ----button----- */
+
+.button-container{
+    padding: 1rem 1rem;
+}
+
+.button {
+    width: max-content;
+    padding: 0rem 1rem 1rem 0rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.primary-btn{
+    width: 10rem;
+    padding: 0rem 1rem;
+    border-style: ridge;
+    border-width:0.05rem;
+    border-radius: 1rem;
+    background-color:white;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    height: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.link-button{
+    width: 10rem;
+    height: 2rem;
+    padding: 0rem 1rem;
+    background-color:#BFDBFE;
+    border: solid;
+    border-width:0.05rem;
+    border-radius: 1rem;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+.icon-btn {
+    width: 10rem;
+    height: 2rem;
+    background-color: #831843;
+    border: none;
+    color: white;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.primary-btn:hover{
+    border: 1px solid wheat;
+    background-color: black;
+    color:white;
+}
+.bg-btn:hover {
+    border: 1px solid #df1b6c;
+    background-color: #fff;
+    color: #df1b6c;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}

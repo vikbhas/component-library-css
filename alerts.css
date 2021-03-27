@@ -1,0 +1,33 @@
+
+.alert-container{
+    padding: 1rem 1rem;
+}
+.alert{
+    position: relative;
+    max-width: 80%;
+    padding: 0.95rem 1.25rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.alert-success{
+    background-color: #A7F3D0;
+    color: #047857;
+}
+.alert-failure{
+    background-color: #FCA5A5;
+    color:#B91C1C;
+}
+.alert-info{
+    background-color: #BFDBFE;
+    color: #1D4ED8;
+}
+.alert-warning{
+    background-color:#FEF3C7;
+    color: #F59E0B;
+}

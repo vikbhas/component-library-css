@@ -1,0 +1,50 @@
+.forms-container{
+    padding: 1rem 1rem;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    border: 1px solid ccc;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    /* border: none; */
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#gender{
+    padding: 12px 20px;
+}
+.forms-div {
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 1rem 2rem 2rem;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width:30%;
+    background-color: white;
+  }
+
+#lname-validate{
+    padding-left: 4px;
+}
+#fname-validate{
+    padding-left: 4px;
+}

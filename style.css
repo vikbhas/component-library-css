@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "/button.css";
+@import "/alerts.css";
+@import "/avatar.css";
+@import "/list.css";
+@import "/typography.css";
+@import "/grids.css";
+@import "/image.css";
+@import "/badges.css";
+@import "/modal.css";
+@import "/forms.css";
+@import "/navigation.css";
+@import "/cards.css";
+html {
+    height: 100%;
+}
+
+:root{
+    --background-color: gray;
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    height: 100%;
+    max-width: 100%;
+    margin:0px;
+    border-style: none;
+}
+
+.body-container{
+    display: grid;
+    grid-area: body;
+    margin:0px;
+    border-style: ridge;
+    border-width : 0px;
+    border-color: black;
+}
+.body-sidebar{
+    position: fixed;
+    top: 0;
+    width: 170px;
+    margin:0px;
+    grid-area: sidebar;
+    height:100%;
+    max-width:inherit;
+    border-style: ridge;
+    border-width : 0px;
+    border-color: black;
+    background-color:#3730A3;
+    color: #E5E7EB;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 0px;
+    grid-template-areas: 
+    "sidebar header header header header header header"
+    "sidebar body body body body body body"
+    "sidebar body body body body body body"
+    "sidebar body body body body body body"
+    "sidebar body body body body body body"
+    "sidebar body body body body body body"
+}
